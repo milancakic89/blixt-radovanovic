@@ -1,0 +1,9 @@
+.hero-section{
+    padding-top: 6rem;
+
+}
+.absolute{
+    @media (max-width: 843px){
+        @include absolute-center();
+    }
+}

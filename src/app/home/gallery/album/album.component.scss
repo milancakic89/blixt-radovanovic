@@ -1,0 +1,51 @@
+.album{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 200px;
+    margin-bottom: 15rem;
+    &-item{
+        display: block;
+        width: 100%;
+        border-radius: 12px;
+        padding: 10px;
+        transition: all .2s ease-out;
+        z-index: 0;
+        img{
+            border-radius: 12px;
+        }
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.3);
+            padding: 0;
+            z-index: 1000;
+            border-radius: 4px;
+            -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.877);
+            -moz-box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+        }
+    }
+}
+.item{
+    &-1{
+        
+    }
+    &-2{
+
+    }
+    &-3{
+
+    }
+    &-4{
+        grid-area: 2 / 1;
+    }
+    &-5{
+
+    }
+    &-6{
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+        height: 100%;
+    }
+}

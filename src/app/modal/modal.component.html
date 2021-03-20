@@ -1,0 +1,10 @@
+<div class="modal">
+    <div [ngClass]="showModal ? 'show-modal' : 'hide-modal'">
+        <button class="button-close" (click)="closeGallery()" *ngIf="showModal">
+            <div class="button-close__content">
+              <p class="button-close__text">CLOSE</p>
+            </div>
+          </button>
+        <ng-content></ng-content>
+    </div>
+</div>

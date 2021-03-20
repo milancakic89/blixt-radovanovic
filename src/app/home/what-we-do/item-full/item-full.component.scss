@@ -1,0 +1,63 @@
+@import '../../../../styles/variables';
+
+.right{
+    width: 100%;
+    background-image: linear-gradient(to right, transparent 60%, $bg-lightgray 60%, $bg-lightgray 100%);
+    margin-bottom: 10rem;
+
+    .item-half:nth-child(2){
+        order: 2;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 0;
+        img{
+            max-height: 300px;
+        }
+    }
+    .item-half:nth-child(1){
+        order: 1;
+        padding: 0px 3rem;
+    }
+}
+.left{
+    width: 100%;
+    background-image: linear-gradient(to left, transparent 60%, $bg-lightgray 60%, $bg-lightgray 100%);
+   
+    margin-bottom: 10rem;
+    .item-half:nth-child(2){
+        order: 1;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 0;
+
+        img{
+            max-height: 300px;
+        }
+    }
+    .item-half:nth-child(1){
+        order: 2;
+        padding: 0px 3rem;
+    }
+}
+.two-halfs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.item-half:nth-child(2){
+    order: 2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item-half:nth-child(1){
+    order: 1;
+    padding: 0px 3rem;
+}
+.two-halfs{
+    padding: 0;
+}

@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+.what-we-do{
+    padding: 5rem 0;
+}
+.image-half{
+    padding: 18% 0;
+   
+    img{
+        width: 100%;
+        max-width: 300px;
+    }
+}
+.larger{
+    img{
+        max-width: 500px;
+    }
+}
+.larger:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+}
+.item-description{
+    margin-top: 3rem;
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+
+.text-half{
+    padding: 0px 1rem;
+}

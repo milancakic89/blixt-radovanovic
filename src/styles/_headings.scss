@@ -1,0 +1,82 @@
+.heading-primary{
+    text-align: left;
+    font-size: 3.8rem;
+    max-width: 680px;
+    color: #fff;
+    font-weight: 900;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+    letter-spacing: .7rem;
+    font-family: 'Elektro-Font';
+
+
+    @media(max-width: 768px){
+        font-size: 3.2rem;
+        max-width: 510px;
+        letter-spacing: .4rem;
+    }
+    @media(max-width: 600px){
+
+        max-width: 500px;
+    }
+    @media(max-width: 500px){
+        font-size: 3rem;
+        line-height: 5rem;
+        max-width: 450px;
+        margin-bottom: 1.5rem;
+        letter-spacing: .3rem;
+    }
+    @media(max-width: 300px){
+        font-size: 2.5rem;
+        line-height: 4.4rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: .3rem;
+    }
+
+
+
+    &-description{
+        text-align: left;
+        margin-top: 0px;
+        color: rgb(172, 172, 172);
+        font-size: 2rem;
+        max-width: 440px;
+        font-weight: 400;
+        line-height: 3rem;
+        margin-bottom: 8rem;
+
+        @media(max-width: 768px){
+            font-size: 2.3rem;
+            font-weight: 300;
+        }
+        @media(max-width: 500px){
+            font-size: 2rem;
+
+        }
+    }   
+}
+.heading-why-us{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+    color: rgba($heading-gray, .8);
+}
+.heading-what-we-do{
+    text-align: left;
+    margin-top: 0;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    font-weight: 500;
+    color: #000;
+
+
+
+}
+.heading-tertiary{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 11rem;
+
+}

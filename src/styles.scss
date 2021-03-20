@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: "Elektro-Font";
+    src: url("./elektro-font/electroshackle-yrvy-webfont.woff2") format("woff2");
+    src: url("./elektro-font/electroshackle-yrvy-webfont.woff") format("woff");
+    font-weight: normal;
+    font-size: normal;
+}
+    
+
+*{
+    box-sizing: border-box;
+    
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-align: none;
+}
