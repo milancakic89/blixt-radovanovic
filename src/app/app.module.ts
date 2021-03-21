@@ -18,9 +18,14 @@ import { FooterComponent } from './footer/footer.component';
 import { ImpressionsComponent } from './home/impressions/impressions.component';
 import { ClientComponent } from './home/impressions/client/client.component';
 import { ImpressionsService } from './home/impressions/impressions.service';
+import { ContactComponent } from './contact/contact.component';
+import { ContactInfoComponent } from './contact/contact-info/contact-info.component';
+import { PricesComponent } from './prices/prices.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: 'kontakt', component: ContactComponent},
+  {path: 'cenovnik', component: PricesComponent}
 ]
 
 @NgModule({
@@ -38,7 +43,10 @@ const routes: Routes = [
     AlbumComponent,
     FooterComponent,
     ImpressionsComponent,
-    ClientComponent
+    ClientComponent,
+    ContactComponent,
+    ContactInfoComponent,
+    PricesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 .navigation{
-    background-color: rgba($color-navigation, .8);
+    background-color: rgba($color-navigation, .4);
     color: #fff;
     z-index: 100;
     &-nav{
@@ -15,7 +15,6 @@
     &-wrapper{
         width: 100%;
         height: 100vh;
-        background-image: url('../assets/img/background-large-gray.jpg');
         background-repeat: no-repeat;
         background-size: cover;
 

@@ -1,13 +1,13 @@
-<div class="navigation-wrapper">
+<div class="navigation-wrapper" [ngClass]="background">
   <nav class="navigation">
     <div class="container navigation-nav">
-      <a class="logo"><img src="../../assets/blixt_logo.png" /></a>
+      <a class="logo" [routerLink]="['/']"><img src="../../assets/blixt_logo.png" /></a>
       <ul class="links" [ngClass]="menuOpened ? '' : 'closed-links'">
-        <li class="links-item"><a class="links-a">O Nama</a></li>
-        <li class="links-item"><a class="links-a">Usluge</a></li>
-        <li class="links-item"><a class="links-a">Hitne Intervencije</a></li>
-        <li class="links-item"><a class="links-a">Cenovnik</a></li>
-        <li class="links-item"><a class="links-a">Kontakt</a></li>
+        <li class="links-item"><a class="links-a" routerLinkActive="active-link" [routerLink]="['/o-nama']">O Nama</a></li>
+        <li class="links-item"><a class="links-a" routerLinkActive="active-link" [routerLink]="['/usluge']">Usluge</a></li>
+        <li class="links-item"><a class="links-a" routerLinkActive="active-link" [routerLink]="['/intervencije']">Hitne Intervencije</a></li>
+        <li class="links-item"><a class="links-a" routerLinkActive="active-link" [routerLink]="['/cenovnik']">Cenovnik</a></li>
+        <li class="links-item"><a class="links-a" routerLinkActive="active-link" [routerLink]="['/kontakt']">Kontakt</a></li>
       </ul>
       <div
         class="burger-menu"

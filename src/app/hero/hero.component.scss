@@ -1,5 +1,39 @@
+@import '../../styles/variables';
+
 @media only screen and (min-width: 843px){
     .burger-menu{
         display: none;
     }
+}
+.links{
+    &-a{
+        text-decoration: none;
+        color: #fff;
+
+    &:hover,
+    &:active{
+        color: $primary-orange;
+    }
+    }
+}
+.home{
+    background-image: url('../../assets/img/background-large-gray.jpg') !important;
+}
+.about{
+    background-image: url('../../assets/img/background-large-gray.jpg') !important;
+}
+.favors{
+    background-image: url('../../assets/img/background-large-gray.jpg') !important;
+}
+.emergency{
+    background-image: url('../../assets/img/background-large-gray.jpg') !important;
+}
+.prices{
+    background-image: url('../../assets/img/price.jpg') !important;
+}
+.contact{
+    background-image: url('../../assets/img/contact.jpg') !important;
+}
+.active-link{
+    color: $primary-orange;
 }

@@ -6,6 +6,7 @@
 .clients-wrapper{
     position: relative;
     width: 100%;
+    overflow: hidden;
     padding-top: calc(100% * (6/16));
     border-top: 1px solid rgb(192, 192, 192);
 }
