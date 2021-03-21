@@ -1,3 +1,6 @@
+
+@import '../styles/variables';
+
 @mixin section-padding{
     padding: 15rem 0;
 }
@@ -24,6 +27,8 @@
 }
 .container{
     width: 100%;
-    max-width: 1250px;
+    max-width:  $mainWidth;
     margin: 0 auto;
+    overflow: hidden;
+    padding: 0 !important;
 }

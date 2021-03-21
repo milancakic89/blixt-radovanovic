@@ -14,6 +14,10 @@ import { GalleryComponent } from './home/gallery/gallery.component';
 import { ModalComponent } from './modal/modal.component';
 import { ModalService } from './modal/modal.service';
 import { AlbumComponent } from './home/gallery/album/album.component';
+import { FooterComponent } from './footer/footer.component';
+import { ImpressionsComponent } from './home/impressions/impressions.component';
+import { ClientComponent } from './home/impressions/client/client.component';
+import { ImpressionsService } from './home/impressions/impressions.service';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}
@@ -31,13 +35,16 @@ const routes: Routes = [
     ItemFullComponent,
     GalleryComponent,
     ModalComponent,
-    AlbumComponent
+    AlbumComponent,
+    FooterComponent,
+    ImpressionsComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [ModalService],
+  providers: [ModalService, ImpressionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

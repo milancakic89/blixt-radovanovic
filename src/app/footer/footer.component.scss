@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+
+.footer{
+    padding: 5rem 0;
+    background-color:  $color-navigation;
+
+    &__logo{
+        max-width: 1250px;
+        margin: 0 auto 4rem auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.footer__links{
+    width: 100%;
+    max-width: $mainWidth;
+    margin: 2rem auto 0 auto;
+    display: flex;
+
+    .row-60{
+        width: 60%;
+        padding: .3rem 1rem;
+        border-top: 1px solid gray;
+    }
+    .row-40{
+        width: calc(40% - 50px);
+        padding: .3rem 0;
+        display: flex;
+        padding: 1rem 2rem;
+        margin-left: 50px;
+        border-top: 1px solid gray;
+
+        i{
+            font-size: 3rem;
+            margin-right: 6rem;
+            color: $primary-blue;
+
+            &:hover{
+                color: $primary-orange;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__list{
+        padding: .5rem 0;
+        display: flex;
+        margin: 0 10px;
+        justify-content: space-between;
+
+        li{
+            padding: .5rem 1rem;
+            cursor: pointer;
+            &:hover{
+                a{
+                    color:  $primary-orange;
+                }
+            }
+            
+            a{
+                color: #fff;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+        }
+
+    }
+    &__vat{
+        margin-top: 5rem;
+        padding-left: 2rem;
+        p,
+        span{
+            color: rgb(158, 158, 158);
+            font-size: 1.6rem;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

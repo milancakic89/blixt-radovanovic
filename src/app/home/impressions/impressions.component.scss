@@ -1,0 +1,88 @@
+
+@import '../../../styles/variables';
+.impressions{
+    padding: 15rem 0;
+}
+.clients-wrapper{
+    position: relative;
+    width: 100%;
+    padding-top: calc(100% * (6/16));
+    border-top: 1px solid rgb(192, 192, 192);
+}
+.clients{
+    transition: all .3s linear;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    grid-auto-columns: minmax(50%, auto);
+    grid-auto-flow: column;
+}
+.arrow{
+    &-left{
+        position: absolute;
+        background-color:  $primary-red;
+        color: #fff;
+        font-size: 1.8rem;
+        left: 10px;
+        padding: 1rem 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    &-right{
+        position: absolute;
+        background-color:  $primary-red;
+        color: #fff;
+        font-size: 1.8rem;
+        right: 10px;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &-left,
+    &-right{
+        z-index: 100;
+        opacity: .5;
+        -webkit-user-select: none;       
+        -moz-user-select: none; 
+        -ms-user-select: none;
+        user-select: none;
+        &:hover,
+        &:active{
+            transition: all .5 linear;
+            opacity: 1;
+        }
+        &:active{
+            background-color:  $heading-gray;
+        }
+    }
+}
+.animate{
+    &-00{
+        left: 0;
+    }
+    &-10{
+        left: -50%;
+    }
+    &-20{
+        left: -100%;
+    }
+    &-30{
+        left: -150%;
+    }
+    &-40{
+        left: -200%;
+    }
+    &-50{
+        left: -250%;
+    }
+    &-60{
+        left: -300%;
+    }
+}

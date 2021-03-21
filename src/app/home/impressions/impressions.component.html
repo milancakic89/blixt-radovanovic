@@ -1,0 +1,13 @@
+<div class="impressions">
+    <div class="container">
+        <h3 class="heading-tertiary">UTISCI KLIJENATA</h3>
+        <div class="clients-wrapper">
+            <div class="arrow-left" (click)="slide('left')"><</div>
+            <div class="arrow-right" (click)="slide('right')">></div>
+            <div class="clients" [ngClass]="animate">
+                <app-client *ngFor="let client of impressions; let i = index"
+                [client]="client"></app-client>
+                </div>
+            </div>
+        </div>
+    </div>
