@@ -25,6 +25,14 @@
         margin-bottom: 25rem !important;
     }
 }
+.mt{
+    &-20{
+        margin-top: 20rem !important;
+    }
+    &-10{
+        margin-top: 10rem !important;
+    }
+}
 .container{
     width: 100%;
     max-width:  $mainWidth;

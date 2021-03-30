@@ -1,0 +1,38 @@
+<div class="price-table">
+  <div class="container">
+    <h3 class="heading-tertiary">CENOVNIK</h3>
+    <h3>Usluge BLIXT RADOVANOVIC</h3>
+    <p class="price-info">Cene su okvirne</p>
+    <p>
+      Konačnu cenu usluge električara dobijate kada se ustanovi kvar, model
+      uredjaja, koji deo mora da se zameni, obim posla, da li se usluga vrši na
+      postojećoj instalaciji ili se radi postvljanje nove instalacije.
+    </p>
+    <div class="prices">
+      <div class="prices-body" *ngFor="let price of prices">
+        <div class="prices-row-title">
+          <div class="left-half">
+            <h3>{{ price.title }}</h3>
+          </div>
+          <div class="right-half">
+            <h3>CENA U EURIMA</h3>
+          </div>
+        </div>
+        <div class="prices-row" *ngFor="let item of price.items">
+          <div class="left-half">
+            <p>{{ item.name }}</p>
+          </div>
+          <div class="right-half">
+            <p>{{ item.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="price-info">
+      Sa strujom i električnim instalacijama se u glavnom jednom greši. Da bi
+      ste bili mirne glave i bezbedni u vašem domu ili poslovnom prostoru i
+      uživali u svemu što Vam pruža električna energija pozovite servis BLIXT
+      RADOVANOVIC.
+    </p>
+  </div>
+</div>
