@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -24,6 +24,7 @@ import { PricesComponent } from './prices/prices.component';
 import { PriceTableComponent } from './prices/price-table/price-table.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { InfoComponent } from './about-us/info/info.component';
+import { GalleryItemComponent } from './modal/gallery-item/gallery-item.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -53,12 +54,14 @@ const routes: Routes = [
     PricesComponent,
     PriceTableComponent,
     AboutUsComponent,
-    InfoComponent
+    InfoComponent,
+    GalleryItemComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [ModalService, ImpressionsService],
   bootstrap: [AppComponent]
 })

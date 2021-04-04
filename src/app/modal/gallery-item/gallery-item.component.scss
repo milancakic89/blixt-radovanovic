@@ -1,0 +1,21 @@
+.image-wrapper{
+    border: 2px solid rgba(128, 128, 128, 0.2);
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+
+    &:hover{
+        background-color: rgba(128, 128, 128, 0.2);
+    }
+}
+.middle{
+    height: 115px;
+    width: 115px;
+
+}

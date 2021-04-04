@@ -1,7 +1,12 @@
 .modal{
+    padding-top: 0px;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 0%;
     height: 100vh;
+    z-index: 10000;
     top: 0;
     right: 0;
     box-sizing: border-box;
@@ -10,9 +15,13 @@
     overflow: hidden;
 }
 .show-modal{
+    padding-top: 0px;
     position: fixed;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     right: 0;
     box-sizing: border-box;
@@ -21,6 +30,9 @@
 }
 .hide-modal{
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 0%;
     height: 100vh;
     top: 0;
@@ -28,4 +40,63 @@
     box-sizing: border-box;
     background-color: rgba(10, 5, 32, .8);
     transition: width .1s linear;
+}
+.modal-gallery{
+    z-index: 1000;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.big-item{
+    position: relative;
+    transition: all .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 145px);
+    min-height: 100px;
+    background-color: #fff;
+    height: calc(100vh - 135px);
+    img{
+        height: 100%;
+    }
+}
+.item-track{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+.animate-in{
+    animation: animate-in .3s linear;
+}
+.animate-out{
+    animation: animate-out .3s linear;
+}
+
+@keyframes animate-in{
+    0%{
+        transform: scale(.2);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes animate-out{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(.1);
+        opacity: 0;
+    }
 }

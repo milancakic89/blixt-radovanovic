@@ -1,6 +1,7 @@
 .button {
     &-close {
         position: fixed;
+        z-index: 90000;
         right: 30px;
         top: 30px;
         padding: 0;
@@ -139,6 +140,47 @@
 
         &:active {
             background-color: rgb(189, 88, 15);
+        }
+    }
+}
+.arrow{
+    &-left{
+        position: absolute;
+        background-color:  $primary-red;
+        color: #fff;
+        font-size: 1.8rem;
+        left: 10px;
+        padding: 1rem 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    &-right{
+        position: absolute;
+        background-color:  $primary-red;
+        color: #fff;
+        font-size: 1.8rem;
+        right: 10px;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &-left,
+    &-right{
+        z-index: 100;
+        opacity: .5;
+        -webkit-user-select: none;       
+        -moz-user-select: none; 
+        -ms-user-select: none;
+        user-select: none;
+        &:hover,
+        &:active{
+            transition: all .5 linear;
+            opacity: 1;
+        }
+        &:active{
+            background-color:  $heading-gray;
         }
     }
 }

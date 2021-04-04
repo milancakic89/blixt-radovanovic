@@ -1,10 +1,21 @@
-<div class="modal">
-    <div [ngClass]="showModal ? 'show-modal' : 'hide-modal'">
+<div class="modal" [ngClass]="showModal ? 'show-modal' : 'hide-modal'">
+    <div>
         <button class="button-close" (click)="closeGallery()" *ngIf="showModal">
             <div class="button-close__content">
               <p class="button-close__text">CLOSE</p>
             </div>
           </button>
-        <ng-content></ng-content>
     </div>
+    <modal-gallery class="modal-gallery">
+      <div class="big-item">
+        <div class="arrow-left" (click)="onSlideLeft()"><</div>
+       <img *ngIf="displaying.length" src="{{displaying[2].image}}"/>
+        <div class="arrow-right" (click)="onSlideRight()">></div>
+      </div>
+      <div class="item-track">
+        <app-gallery-item *ngFor="let image of displaying; let i = index"
+         [index]="i"
+         [thumbnail]="displaying[i].thumbnail"></app-gallery-item>
+      </div>
+    </modal-gallery>
 </div>

@@ -13,7 +13,6 @@ export class GalleryComponent {
 
 
   public openModal(){
-    console.log('opened modal')
     return this.service.showModal.emit(true);
   }
 
