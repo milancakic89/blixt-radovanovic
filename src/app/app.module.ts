@@ -58,8 +58,10 @@ const routes: Routes = [
     GalleryItemComponent
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes)
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    RouterModule.forRoot(routes, {
+    initialNavigation: 'enabled'
+})
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [ModalService, ImpressionsService],
