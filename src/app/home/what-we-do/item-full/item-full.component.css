@@ -1,0 +1,107 @@
+.right {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, transparent), color-stop(60%, #f8f8f8), to(#f8f8f8));
+  background-image: linear-gradient(to right, transparent 60%, #f8f8f8 60%, #f8f8f8 100%);
+  margin-bottom: 10rem;
+}
+
+.right .item-half:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 0;
+}
+
+.right .item-half:nth-child(2) img {
+  max-height: 300px;
+}
+
+.right .item-half:nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 0px 3rem;
+}
+
+.left {
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(60%, transparent), color-stop(60%, #f8f8f8), to(#f8f8f8));
+  background-image: linear-gradient(to left, transparent 60%, #f8f8f8 60%, #f8f8f8 100%);
+  margin-bottom: 10rem;
+}
+
+.left .item-half:nth-child(2) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 0;
+}
+
+.left .item-half:nth-child(2) img {
+  max-height: 300px;
+}
+
+.left .item-half:nth-child(1) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 0px 3rem;
+}
+
+.two-halfs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.item-half:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-half:nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 0px 3rem;
+}
+
+.two-halfs {
+  padding: 0;
+}
+/*# sourceMappingURL=item-full.component.css.map */

@@ -1,0 +1,14 @@
+.contact-info {
+  padding: 15rem 0;
+}
+
+.contact-info p, .contact-info a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact-info p:nth-child(4) {
+  font-weight: 300;
+}
+/*# sourceMappingURL=contact-info.component.css.map */

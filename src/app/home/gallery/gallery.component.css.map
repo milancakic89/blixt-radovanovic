@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,QAAQ,CAAA;EACJ,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "gallery.component.scss",
+        "../../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "gallery.component.css"
+}

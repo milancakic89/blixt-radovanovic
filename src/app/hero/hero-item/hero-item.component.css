@@ -1,0 +1,47 @@
+.hero-section h1 {
+  -webkit-animation: .7s hero-animation ease-out;
+          animation: .7s hero-animation ease-out;
+}
+
+.hero-section p {
+  -webkit-animation: .8s hero-animation ease-out;
+          animation: .8s hero-animation ease-out;
+}
+
+.hero-section a {
+  -webkit-animation: 1.1s hero-animation ease-out;
+          animation: 1.1s hero-animation ease-out;
+}
+
+@-webkit-keyframes hero-animation {
+  0% {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    opacity: 0;
+  }
+  50% {
+    opacity: .1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-animation {
+  0% {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    opacity: 0;
+  }
+  50% {
+    opacity: .1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=hero-item.component.css.map */
